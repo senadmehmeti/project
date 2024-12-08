@@ -26,4 +26,51 @@ document.querySelector('#close').onclick = () =>{
 
 
 
+// validimi per register
+   document.getElementById('registerForm').addEventListener('submit', function (e) {
+    
+    const name = document.getElementById('name').value.trim();
+    const surname = document.getElementById('surname').value.trim();
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
 
+    
+    if (!name || !surname || !username || !password) {
+        alert("All fields are required!");
+        e.preventDefault(); 
+        return;
+    }
+
+    
+    const nameRegex = /^[A-Za-z]+$/;
+    if (!nameRegex.test(name)) {
+        alert("Name can only contain letters!");
+        e.preventDefault();
+        return;
+    }
+    if (!nameRegex.test(surname)) {
+        alert("Surname can only contain letters!");
+        e.preventDefault();
+        return;
+    }
+
+
+    if (username.length < 3 || /\s/.test(username)) {
+        alert("Username must be at least 3 characters and contain no spaces!");
+        e.preventDefault();
+        return;
+    }
+
+   
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if (!passwordRegex.test(password)) {
+        alert(
+            "Password must be at least 8 characters long and contain both letters and numbers!"
+        );
+        e.preventDefault();
+        return;
+    }
+
+
+    alert("Form submitted successfully!");
+});
