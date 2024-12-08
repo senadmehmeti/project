@@ -30,7 +30,7 @@ section{
 }
 
 section:nth-child(even){
-    background:#eee;
+    background: transparent;
 }
 
 .btn{
@@ -260,4 +260,46 @@ header .icons #menu-bars{
     padding: .5rem 0;
     line-height: 1.5;
      
+}
+
+.about{
+    position: inherit;
+}
+
+.about .sub-heading {
+    display: flex;
+    padding: .5rem 0;
+    color:var(--green);
+    font-size: 2rem;
+}
+
+.about .heading{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .row .image{
+    max-width: 100%;
+    height: auto;
+}
+
+.about .row .image img{
+    flex: 1 1 45rem;
+}
+
+.about .row .content{
+    flex:2;
+
+}
+
+.about {
+    padding-top: 200px;
 }
