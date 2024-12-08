@@ -371,3 +371,66 @@ header .icons #menu-bars{
 
 
 }
+
+
+.contact-form {
+    padding: 2rem;
+    background: #f4f4f4;
+    margin-top: 3rem;
+}
+
+.contact-form .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form .input-group {
+    margin-bottom: 1.2rem;
+}
+
+.contact-form .input-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .input-group textarea {
+    min-height: 150px;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-form .btn:hover {
+    background-color: #2ecc71;
+}
